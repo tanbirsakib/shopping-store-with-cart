@@ -25,10 +25,9 @@ body {
   border-radius: 25px;
   margin-left: 20px;
 }
-#all-products{
+#all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -48,9 +47,13 @@ body {
   width: 150px;
   height: 150px;
 }
+.cardstyle{
+  height: 600px;
+  background-color: rgb(240, 235, 235);
+}
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
+  background-color:rgb(220, 248, 248);
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -67,12 +70,11 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
-    margin-right: 30px;
-    position: fixed;
+    position: static;
+    margin: 30px auto;
   }
   .cart-main {
     padding-right: 10px;
@@ -82,5 +84,16 @@ body {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .cart {
+    width: 300px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    position: static;
+    margin: 30px auto;
+  }
+  .cart-main {
+    padding-right: 10px;
   }
 }
