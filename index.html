@@ -18,23 +18,27 @@
 </head>
 
 <body>
+  <!-- website name title  -->
   <header>
     <h1 class="text-center text-success mt-2">kiLagbe<span class="text-danger">.com</span></h1>
   </header>
   <main class="main">
+    <!-- search field  -->
     <div class="input-group mb-3 mx-auto w-50">
       <input id="inputValue" type="text" class="form-control" placeholder="Search your product"
         aria-label="Recipient's username" aria-describedby="button-search">
       <button onclick="loadProducts()" class="btn btn-outline-success" type="button" id="button-search">Search</button>
     </div>
-    </div>
+    <!-------------- display products  -------------------->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
         </div>
       </div>
+      <!------------------------ cart ------------------->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
+          <div id="single-product" class="text-justify"></div>
           <table class="table table-striped">
             <thead>
               <h1 class="text-center">My-Cart</h1>
@@ -80,8 +84,11 @@
           <div class="parces text-center">
             <button class="btn btn-info text-center">Buy Now</button>
           </div>
+
+
         </div>
       </div>
+    </div>
     </div>
   </main>
   <footer></footer>
