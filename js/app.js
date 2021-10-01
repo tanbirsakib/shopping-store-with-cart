@@ -304,7 +304,6 @@ const details = (id) => {
 };
 //-------------------------- single product show funciton
 const singleProduct = (product) => {
-  console.log(product);
   const div = document.getElementById("single-product");
   div.innerHTML = `<h5 class='text-center '>From Fake Store Api</h5>
                     <p class="fw-bold text-center text-primary">Product ID : ${product.id} Price: ${product.price}</p>
